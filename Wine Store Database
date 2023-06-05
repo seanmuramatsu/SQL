@@ -1,0 +1,25 @@
+--Create a wine shop database  
+
+CREATE table wine (id INTEGER PRIMARY KEY, name TEXT, varietal TEXT, color TEXT, price INTEGER);
+
+INSERT INTO wine (name, varietal, color,price) VALUES ("Anthenaeum", "Cabernet Sauvignon", "Red", 49.95);
+INSERT INTO wine (name, varietal, color,price) VALUES ("Settecieli", "Sangiovese", "Red", 17.95);
+INSERT INTO wine (name, varietal, color,price) VALUES ("Redwick", "Blend", "Red", 17.95);
+INSERT INTO wine (name, varietal, color,price) VALUES ("Donovan-Parke", "Chardonnay", "White", 16.95);
+INSERT INTO wine (name, varietal, color,price) VALUES ("Stella Rosa", "Blend", "Rose", 12.99);
+INSERT INTO wine (name, varietal, color,price) VALUES ("Concentric", "Petit Sirah", "Red", 19.95);
+INSERT INTO wine (name, varietal, color,price) VALUES ("Settecieli", "Pinot Grigio", "White", 17.95);
+INSERT INTO wine (name, varietal, color,price) VALUES ("Dark Hundred Red Wine", "Blend", "Red", 27.95);
+INSERT INTO wine (name, varietal, color,price) VALUES ("Samuel Charles Oak Knoll", "Cabernet Sauvignon", "Red", 51.95);
+INSERT INTO wine (name, varietal, color,price) VALUES ("Splendid Oak", "Cabernet Sauvignon", "Red", 21.95);
+INSERT INTO wine (name, varietal, color,price) VALUES ("Coppola Director's Cut Central Coast", "Chardonnay", "White", 19.95);
+INSERT INTO wine (name, varietal, color,price) VALUES ("Crooked Path Paso Robles", "Zinfandel", "Red", 29.95);
+INSERT INTO wine (name, varietal, color,price) VALUES ("Suvali", "Chardonnay", "White", 17.95);
+INSERT INTO wine (name, varietal, color,price) VALUES ("Vineyard View", "Cabernet Sauvignon", "Red", 44.95);
+INSERT INTO wine (name, varietal, color,price) VALUES ("Donovan-Parke", "Pinot Noir", "Red", 16.95);
+
+--Display the database by price
+SELECT * from wine ORDER BY price ASC;
+
+--Display the database by color
+SELECT * from wine ORDER BY color DESC
